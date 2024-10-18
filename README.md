@@ -76,6 +76,12 @@ This platform manages logistics operations efficiently, handling high traffic an
 
 This logistics platform is designed to manage up to **50 million users**, **100,000 drivers** globally, and handle **10,000 requests per second**. The architecture focuses on scalability, high-performance real-time data handling, and efficient traffic management.
 
+## Video Overview
+
+For a visual understanding of the project, click the image below to watch the video:
+
+[![Logistics Platform Overview](https://img.youtube.com/vi/0odltqu0QLk/0.jpg)](https://youtu.be/0odltqu0QLk)
+
 ### Table of Contents
 
 1. [Major Design Decisions and Trade-offs](#1-major-design-decisions-and-trade-offs)
@@ -185,7 +191,3 @@ The logistics platform is architected to handle large-scale global operations wh
 
 **Key Trade-offs:**  
 The platform balances **eventual consistency** vs. **strong consistency** to maintain a robust and reliable system capable of handling real-time logistics operations on a global scale.
-
-## Video Overview
-
-For a visual understanding of the project, check out the following video: [Logistics Platform Overview](https://youtu.be/0odltqu0QLk)
