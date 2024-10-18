@@ -72,15 +72,17 @@ This platform manages logistics operations efficiently, handling high traffic an
 
 ## Logistics Platform: Design Decisions, Scalability, and High-Performance Handling
 
-### Overview
-
-This logistics platform is designed to manage up to **50 million users**, **100,000 drivers** globally, and handle **10,000 requests per second**. The architecture focuses on scalability, high-performance real-time data handling, and efficient traffic management.
-
 ## Video Overview
 
 For a visual understanding of the project, click the image below to watch the video:
 
 [![Logistics Platform Overview](https://img.youtube.com/vi/0odltqu0QLk/0.jpg)](https://youtu.be/0odltqu0QLk)
+
+### Overview
+
+This logistics platform is designed to manage up to **50 million users**, **100,000 drivers** globally, and handle **10,000 requests per second**. The architecture focuses on scalability, high-performance real-time data handling, and efficient traffic management.
+
+
 
 ### Table of Contents
 
