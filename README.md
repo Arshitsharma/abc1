@@ -1,8 +1,10 @@
+
 # OnTheWay Logistics Platform
 
 This platform manages logistics operations efficiently, handling high traffic and scaling to meet global demand.
 
 ## Project Structure
+
 - **user-frontend**: User interface for booking and tracking deliveries.
 - **admin-frontend**: Admin panel for managing operations and drivers.
 - **associate-frontend**: Frontend for delivery associates to manage deliveries.
@@ -19,21 +21,21 @@ This platform manages logistics operations efficiently, handling high traffic an
 2. **Install Dependencies:**
    Navigate into each folder and install the dependencies:
 
- - For Frontend: 
+   - For Frontend: 
    ```bash
    cd user-frontend
    npm install
    ```
    Do this for `admin-frontend` and `associate-frontend`.
    
- - For Backend Service: 
+   - For Backend Service: 
    ```bash
    cd backend
    npm install
    ```
 
 3. **Setup the Environment Variables**
-   For secure and flexible configuration, the backend requires a .env file. You must create this file in the backend directory and include the following environment variables:
+   For secure and flexible configuration, the backend requires a `.env` file. Create this file in the backend directory and include the following environment variables:
    ```bash
    # MongoDB connection string
    MONGO_CONNECTION_STRING=mongodb://<your-mongo-db-uri>
@@ -53,6 +55,7 @@ This platform manages logistics operations efficiently, handling high traffic an
    Do this for `user-frontend`, `admin-frontend`, `backend`, and `associate-frontend`.
 
 ## Architecture Overview
+
 - **Microservices**: Independent modules for user, driver, booking, and tracking.
 - **MongoDB**: Stores user, driver, and booking data.
 - **Redis**: Caching layer for frequently accessed data (e.g., real-time GPS).
@@ -60,22 +63,20 @@ This platform manages logistics operations efficiently, handling high traffic an
 - **Kafka**: Manages high-frequency events like job assignments.
 
 ## Scalability
+
 - **Kubernetes**: Horizontal scaling for handling 10,000 requests per second.
 - **Load Balancing**: AWS ELB and NGINX for traffic distribution.
 - **Real-Time Data Handling**: Geospatial indexing and caching for fast responses.
 
 ---
 
-Designed to handle large-scale logistics efficiently with modularity and scalability in mind.
+## Logistics Platform: Design Decisions, Scalability, and High-Performance Handling
 
-
-# Logistics Platform: Design Decisions, Scalability, and High-Performance Handling
-
-## Overview
+### Overview
 
 This logistics platform is designed to manage up to **50 million users**, **100,000 drivers** globally, and handle **10,000 requests per second**. The architecture focuses on scalability, high-performance real-time data handling, and efficient traffic management.
 
-## Table of Contents
+### Table of Contents
 
 1. [Major Design Decisions and Trade-offs](#1-major-design-decisions-and-trade-offs)
    - [Microservices Architecture](#microservices-architecture)
@@ -100,7 +101,7 @@ This logistics platform is designed to manage up to **50 million users**, **100,
 The platform is built using a **microservices architecture** where core services such as User Management, Driver Management, Booking, Fleet Management, and Real-Time Tracking are separated. This allows:
 
 - Independent scaling of services based on demand.
-- Modular development, easier to maintain and deploy.
+- Modular development, making it easier to maintain and deploy.
 
 **Trade-offs:**  
 Microservices increase complexity in service communication, coordination, and data consistency. We employ **eventual consistency** for non-critical data (e.g., location updates) and **strong consistency** for critical data (e.g., bookings, payments).
@@ -185,3 +186,6 @@ The logistics platform is architected to handle large-scale global operations wh
 **Key Trade-offs:**  
 The platform balances **eventual consistency** vs. **strong consistency** to maintain a robust and reliable system capable of handling real-time logistics operations on a global scale.
 
+## Video Overview
+
+For a visual understanding of the project, check out the following video: [Logistics Platform Overview](https://youtu.be/0odltqu0QLk)
