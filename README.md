@@ -15,7 +15,7 @@ This platform manages logistics operations efficiently, handling high traffic an
 1. **Clone the Repository:**
    ```bash
    git clone <repository-url>
-   cd Sockets
+   cd abc1
    ```
 
 2. **Install Dependencies:**
